@@ -1,0 +1,76 @@
+.App 
+	background-color: #fff
+	flex-direction: column
+	align-items: center
+	min-height: 100vh
+	color: #6f7c82
+	display: flex
+	justify-content: space-between
+	max-width: 1000px
+	margin-left: auto
+	margin-right: auto
+
+	& > *
+		width: 100%
+
+
+.App-logo
+	margin-top: 30px
+	margin-bottom: 30px
+	width: 70%
+	max-width: 300px
+
+@media (prefers-reduced-motion: no-preference)
+	.App-logo
+		animation: App-logo-spin infinite 20s linear
+
+
+.App-main
+	
+	text-align: center
+	margin: 0 auto
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	flex-grow: 1
+
+a
+	color: #FFCB06
+
+.list
+	text-align: left
+
+	li
+		padding-left: 20px
+		position: relative
+		margin-top: 0.25em
+		margin-bottom: 0.25em
+
+		&::before
+			content: ''
+			position: absolute
+			top: 9px
+			left: 0
+			width: 5px
+			height: 5px
+			background: #fff
+.list__centered
+	display: inline-block
+
+
+@keyframes App-logo-spin
+	from
+		transform: rotate(0deg)
+
+	to
+		transform: rotate(360deg)
+
+
+footer
+	display: block
+	padding: 30px 15px
+	width: 100%
+	box-sizing: border-box
+	background: #394d58
+	color: #fff
